@@ -63,7 +63,7 @@ class Owner
     end
     self.dogs.map.do |dog|
       dog.owner = nil
-      dog.owner = "nervous"
+      dog.mood = "nervous"
     end
   end
   
