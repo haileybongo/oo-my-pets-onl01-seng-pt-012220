@@ -61,7 +61,7 @@ class Owner
       cat.owner = nil 
       cat.mood = "nervous"
     end
-      dogs.map.do |dog|
+      dogs.map do |dog|
       dog.owner = nil
       dog.mood = "nervous"
     end
