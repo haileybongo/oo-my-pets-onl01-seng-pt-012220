@@ -39,6 +39,16 @@ class Owner
   def buy_cat(name)
     my_cats << Cat.new(name,self)
   end
+  
+  def buy_dog(name)
+    my_dogs << Dog.new(name,self)
+  end
+  
+  def self.walk_dogs
+    dogs.collect |dog|
+      dog.mood = "happy"
+    end
+      
     
   
     
