@@ -27,17 +27,14 @@ class Owner
   end
   
   def cats 
-    my_cats = []
     my_cats = Cat.all.select {|cat| cat.owner == self}
-    my_cats
   end
   
   def dogs 
-   # my_dogs = []
     Dog.all.select {|dog| dog.owner == self}
-   # my_dogs
   end
   
+  def buy_cat(name,)
   
     
     
