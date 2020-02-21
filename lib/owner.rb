@@ -48,6 +48,7 @@ class Owner
     dogs.collect |dog|
       dog.mood = "happy"
     end
+  end
       
     
   
