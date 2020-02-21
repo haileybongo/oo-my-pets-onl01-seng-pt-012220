@@ -56,12 +56,12 @@ class Owner
     end
   end
   
-  def sell_pets
-    self.cats.map do |cat|
+  def self.sell_pets
+    cats.map do |cat|
       cat.owner = nil 
       cat.mood = "nervous"
     end
-    self.dogs.map.do |dog|
+      dogs.map.do |dog|
       dog.owner = nil
       dog.mood = "nervous"
     end
