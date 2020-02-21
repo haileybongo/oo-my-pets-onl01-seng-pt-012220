@@ -1,6 +1,6 @@
 class Owner
   attr_accessor :owner 
-  attr_reader :name, :species
+  attr_reader :name, :species, :my_cats, :my_dogs
   
   @@all = []
   
@@ -8,6 +8,8 @@ class Owner
     @name = name
     @species = "human" 
     @@all << self 
+    @my_cats = []
+    @my_dogs = []
   end
   
   def say_species
@@ -27,7 +29,7 @@ class Owner
   end
   
   def cats 
-    my_cats = Cat.all.select {|cat| cat.owner == self}
+    Cat.all.select {|cat| cat.owner == self}
   end
   
   def dogs 
@@ -35,6 +37,8 @@ class Owner
   end
   
   def buy_cat(name)
+    my_cats << Cat.new(name,self)
+  end
     
   
     
