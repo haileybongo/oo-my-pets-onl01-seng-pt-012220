@@ -10,7 +10,7 @@ class Owner
   end
   
   def say_species
-    return "Iam a #{@species}."
+    return "I am a #{@species}."
   end
   
   def self.all 
