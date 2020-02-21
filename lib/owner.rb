@@ -68,8 +68,8 @@ class Owner
   end
   
   def list_pets
-    return cats
-    return dogs
+    return self.cats
+    return self.dogs
   end
       
     
