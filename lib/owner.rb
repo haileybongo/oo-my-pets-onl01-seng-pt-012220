@@ -66,6 +66,11 @@ class Owner
       dog.owner = "nervous"
     end
   end
+  
+  def list_pets
+    return cats
+    return dogs
+  end
       
     
 end
