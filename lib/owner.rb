@@ -44,8 +44,8 @@ class Owner
     my_dogs << Dog.new(name,self)
   end
   
-  def self.walk_dogs
-    dogs.map |dog|
+  def walk_dogs
+    self.dogs.map |dog|
       dog.mood = "happy"
     end
   end
